@@ -1,0 +1,17 @@
+RewriteEngine On
+
+<FilesMatch "\.(tpl|sql|class.php|inc.php|zip|json|txt)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+ErrorDocument 404 /errors/404.php
+ErrorDocument 403 /errors/403.php
+
+Options -Indexes
+Options -MultiViews
+
+RewriteRule ^favicon.ico(|/)$ assets/imgs/csgo-icon.png
+RewriteRule ^MyServers(|/)$ serverList.php
+RewriteRule ^server/(.*)$ viewServer.php?id=$1
+RewriteRule ^logout(|/)$ logout.php

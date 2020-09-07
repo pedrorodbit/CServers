@@ -1,0 +1,5 @@
+themes/default/cache
+themes/default/template_c
+includes/plugins/vendor
+includes/plugins/composer.lock
+data/avatar/*

@@ -1,0 +1,10 @@
+{
+    "require": {
+        "php": ">=7.0.0",
+
+        "xpaw/php-source-query-class": "^1.0",
+        "ehesp/steam-login": "^1.2",
+        "guzzlehttp/guzzle": "^6.3",
+        "smarty/smarty": "^3.1"
+    }
+}
